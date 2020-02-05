@@ -1,0 +1,22 @@
+{
+  "name": "inklusiv.ca",
+  "version": "1.0.0",
+  "description": "Package for the inlusiv.ca website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inklusiv/inklusiv.ca.git"
+  },
+  "author": "Denis Boudreau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inklusiv/inklusiv.ca/issues"
+  },
+  "homepage": "https://github.com/inklusiv/inklusiv.ca#readme",
+  "devDependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}

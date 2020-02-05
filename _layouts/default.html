@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    {%- include skip-nav.html -%}
+    {%- include header.html -%}
+
+    <div class="dqpl-layout">
+      <div class="dqpl-main-content" role="main" data-skip-to-name="Main Content">
+        {{ content }}
+      </div>
+    </div>
+
+    {%- include footer.html -%}
+    <script src="https://unpkg.com/deque-pattern-library/dist/js/pattern-library.min.js"></script>
+
+  </body>
+
+</html>
