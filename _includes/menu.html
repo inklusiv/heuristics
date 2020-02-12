@@ -1,0 +1,18 @@
+<ul class="dqpl-side-bar dqpl-main-nav" id="dqpl-side-bar" role="menu" aria-expanded="false">
+<li class="dqpl-branding dqpl-menuitem-selected" role="menuitem" tabindex="0"><a href="/" tabindex="-1"
+        data-page-title="Deque Pattern Library">
+        <div class="dqpl-name">
+            <div class="dqpl-name-primary">A11Y</div>
+            <div class="dqpl-name-secondary">Heuristics</div>
+        </div>
+    </a></li>
+    <li role="menuitem" tabindex="0"><a href="/about/">About</a></li>
+    <li role="menuitem" aria-controls="dqpl-components" aria-haspopup="true" tabindex="-1">
+        <div class="dqpl-item-text">Heuristics</div>
+        <ul class="dqpl-submenu" role="menu" id="dqpl-components" aria-expanded="false">
+            {% for heuristic in site.data.heuristic %}
+            <li class=" " role="menuitem" tabindex="-1"><a href="/heuristic/{{ heuristic.number }}" tabindex="-1" data-page-title="{{ heuristic.title }} | Heuristic | {{ site.title }}">{{ heuristic.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </li>
+</ul>

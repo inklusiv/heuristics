@@ -12,3 +12,10 @@ body {
     }
   }
 }
+
+.dqpl-side-bar>li>ul>li{
+  a {
+    margin-left: 0;
+  }
+  padding-left: 30px !important;
+}
