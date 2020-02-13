@@ -3,3 +3,24 @@
 ---
 
 @import "custom";
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+.home {
+	.box {
+		margin: 25px;
+		padding: 25px;
+	img {
+		width: 100%;
+	}
+	}
+}
+
+.dqpl-side-bar>li>ul>li{
+	a {
+		margin-left: 0;
+	}
+		padding-left: 30px !important;
+}
