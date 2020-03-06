@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en'}}">
 
   {%- include head.html -%}
 
   <body>
-    {%- include skip-nav.html -%}
-    {%- include header.html -%}
+	<div class="wrapper">
 
-    <div class="dqpl-layout">
-      <div class="dqpl-main-content" role="main" data-skip-to-name="Main Content">
-        {{ content }}
-      </div>
-    </div>
+		{%- include menu.html -%}
 
-    {%- include footer.html -%}
-    <script src="https://unpkg.com/deque-pattern-library/dist/js/pattern-library.min.js"></script>
+		<div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
 
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </nav>
+
+			{{ content }}
+		</div>
+		
+		<div class="overlay"></div>
+	</div>
+	{%- include footer.html -%}
   </body>
 
 </html>

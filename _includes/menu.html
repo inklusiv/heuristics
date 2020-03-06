@@ -1,18 +1,51 @@
-<ul class="dqpl-side-bar dqpl-main-nav" id="dqpl-side-bar" role="menu" aria-expanded="false">
-<li class="dqpl-branding dqpl-menuitem-selected" role="menuitem" tabindex="0"><a href="/" tabindex="-1"
-        data-page-title="Deque Pattern Library">
-        <div class="dqpl-name">
-            <div class="dqpl-name-primary">A11Y</div>
-            <div class="dqpl-name-secondary">Heuristics</div>
-        </div>
-    </a></li>
-    <li role="menuitem" tabindex="0"><a href="/about/">About</a></li>
-    <li role="menuitem" aria-controls="dqpl-components" aria-haspopup="true" tabindex="-1">
-        <div class="dqpl-item-text">Heuristics</div>
-        <ul class="dqpl-submenu" role="menu" id="dqpl-components" aria-expanded="false">
-            {% for heuristic in site.data.heuristic %}
-            <li class=" " role="menuitem" tabindex="-1"><a href="/heuristic/{{ heuristic.number }}" tabindex="-1" data-page-title="{{ heuristic.title }} | Heuristic | {{ site.title }}">{{ heuristic.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </li>
-</ul>
+<nav id="sidebar">
+
+    <div id="dismiss">
+        <i class="fas fa-arrow-left"></i>
+    </div>
+    
+    <div class="sidebar-header">
+        <h3>Site Menu</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+        <p>A11Y Heuristic</p>
+        <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Home 1</a>
+                </li>
+                <li>
+                    <a href="#">Home 2</a>
+                </li>
+                <li>
+                    <a href="#">Home 3</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">Page 1</a>
+                </li>
+                <li>
+                    <a href="#">Page 2</a>
+                </li>
+                <li>
+                    <a href="#">Page 3</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Portfolio</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+</nav>
