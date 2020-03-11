@@ -8,7 +8,12 @@ layout: default
   </header>
 
   <div class="post-content">
-    {{ content }}
+    <p>{{ page.statement }}</p>
+    <ul>
+      {% for checkpoints in page.checkpoints %}
+      <li>{{ checkpoints }}</li>
+      {% endfor %}
+    </ul>
   </div>
 
 </article>
