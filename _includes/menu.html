@@ -1,13 +1,10 @@
 <nav id="sidebar">
-
     <div id="dismiss">
-        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-times fa-2x"></i>
     </div>
-    
     <div class="sidebar-header">
         <h3><a href="/">A11Y Heuristic</a></h3>
     </div>
-
     <ul class="list-unstyled components">
         {% for heuristic in site.data.heuristic %}
         <li><a href="/heuristic/{{ heuristic.number }}">{{ heuristic.title }}</a></li>
