@@ -9,7 +9,7 @@ layout: home
 <div class="row">
 {% for heuristic in site.data.heuristic %}
     <div class="col-6 p-lg-4 border">
-        <a href="./heuristic/{{ heuristic.number }}">
+        <a href="/heuristic/{{ heuristic.number }}/">
         <img class="img-fluid rounded mb-2" src="{{ heuristic.img_url }}" alt="" />
         <h2>{{ heuristic.title }}</h2>
         <p>{{ heuristic.statement }}</p>
