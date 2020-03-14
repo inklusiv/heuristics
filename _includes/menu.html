@@ -1,13 +1,22 @@
-<nav id="sidebar">
-    <div id="dismiss">
-        <i class="fas fa-times fa-2x"></i>
-    </div>
-    <div class="sidebar-header">
-        <h3><a href="/">A11Y Heuristic</a></h3>
-    </div>
-    <ul class="list-unstyled components">
-        {% for heuristic in site.data.heuristic %}
-        <li><a href="/heuristic/{{ heuristic.number }}">{{ heuristic.title }}</a></li>
-        {% endfor %}
-    </ul>
-</nav>
+<div id="sidebar">
+        <div class="sidebar-header">
+            <h3><a href="/">A11Y Heuristic</a></h3>
+        </div>
+        <div id="dismiss">
+            <i class="fas fa-times fa-2x"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <nav class="col-sm">
+                    <ul class="list-unstyled components">
+                        {% for heuristic in site.data.heuristic %}
+                        <li><a href="/heuristic/{{ heuristic.number }}">{{ heuristic.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+                <div class="col-sm">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vel cum quibusdam saepe repudiandae necessitatibus ullam exercitationem. Odit molestiae accusamus nihil alias nam commodi tempore minus reiciendis ipsum? Labore, neque.</p>
+                </div>
+            </div>
+        </div>
+</div>
